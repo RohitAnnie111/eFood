@@ -1,23 +1,53 @@
-
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function Login() {
+function Signup() {
 
-  function fun(e)
-  {
-    e.preventDefault()
-    console.log("hello rohit ")
+const[form,setform] = useState({})
+
+function input(e)
+{
+  
+
+setform({
+    ...form,
+    [e.target.name]:e.target.value})
+
+}
+
+const Submit = async (e)=>{
+
+  
+  e.preventDefault();
+  
+  
+  const response = await fetch("http://localhost/Home/login",{
+  
+  method: 'POST',
+  body:JSON.stringify(form),
+  
+  headers:{ // aditional type
+  
+      'Content-Type':'application/json'
+  
   }
+  
+  
+  })
 
+}
+  
   return (
-
-    <Form onSubmit={fun}>
-
-      <Form.Group className="mb-3" controlId="formBasicEmail" >
+    <>
+          <div className='container'>
+    
+    <Form onSubmit={Submit}>
+    
+      <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control type="email" placeholder="Enter email" name="email" onChange={input}/>
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text>
@@ -25,21 +55,27 @@ function Login() {
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" placeholder="Password" name="password" onChange={input} />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-     Submit
+   
+
+      <Button variant="success" className="m-3" type="submit">
+        Login
       </Button>
 
-
-    </Form>
+    <Link to="/Signup"><Button variant="denger"  className="btn btn-danger m-3">
+        I don't have account
+      </Button>
+      </Link> 
 
     
+    </Form>
+
+    </div>
+
+    </>
 
   );
 }
 
-export default Login;
+export default Signup;
