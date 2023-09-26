@@ -1,12 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
 body {
 
-  /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
-  
-  
+  /* background-color:red; */
+background: radial-gradient(circle, rgb(24, 50, 41) 0%, rgb(1, 1, 1) 63%, rgb(0, 3, 3) 67%, rgb(0, 0, 0) 72%);
+
+
 
 }
-.container-fluid{
+
+
+
+.cont{
+
+   /* width: 100%; */
+   height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));  
+  grid-template-columns: repeat(auto-fit, minmax(385px, auto));
+
 }
+
+
+.footer{
+  margin-top: 40px;
+  width: 100%;
+
+
+}
+
+#logo{
+  height: 60px;
+}
+#ttl {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold if desired */
+  color: yellow; /* Specify the text color */
+  /* Add any other styles you want */
+}
+
+
+
+.iconsdiv {
+  /* width: 100%; */
+  gap: 30px;
+  margin-left: 20px;
+  font-size: 24px;
+  /* Corrected font-weight */
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(395px, auto));
+}
+
+.item1 {
+  position: relative; /* Use relative positioning if necessary */
+  padding: 0.2rem;
+  height: 2rem;
+  color: white;
+}
+
+.item1 p:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.navbar{
+  background-color: red;
+}
+
+.item1 a {
+  all: unset;
+}
+
+
+
+#category{color: white; font-weight: 600;}
+
+
