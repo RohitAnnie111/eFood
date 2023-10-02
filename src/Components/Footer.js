@@ -7,16 +7,15 @@ export default function Footer() {
       <div className="footer">
         <div className="iconsdiv">
           <div className="item1">
+            <p>
+              <FaLinkedin />
+              linkdin
+            </p>{" "}
             <a
               href="https://www.linkedin.com/in/rohit-kafle-3b2354260"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <p>
-                <FaLinkedin />
-                linkdin
-              </p>{" "}
-            </a>
+            ></a>
           </div>
 
           <div className="item1">
@@ -36,11 +35,25 @@ export default function Footer() {
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill=" red"
+            fill="greenyellow"
             fill-opacity="1"
-            d="M0,128L60,122.7C120,117,240,107,360,96C480,85,600,75,720,101.3C840,128,960,192,1080,192C1200,192,1320,128,1380,96L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            d="M0,128L60,122.7C120,117,240,107,360,96C480,85,600,75,720,
+            101.3C840,128,960,192,1080,192C1200,192,1320,128,1380,96L1440,
+            64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,
+            720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>{" "}
         </svg>
+        <div className="footer-content">
+          <div className="text">
+              <h5>Contact Us</h5>
+              <h5>Our Services</h5>
+              <h5>Privacy Policy</h5>
+              <h5>Term & Condition</h5>
+          </div>
+          <div className="copyright">
+            <h6>eFood Copyright © 2023 eFood - All rights reserved || Designed By: Rohit Kafle</h6>
+          </div>
+        </div>
       </div>
     </>
   );

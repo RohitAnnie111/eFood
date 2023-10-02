@@ -1,8 +1,7 @@
-
 body {
 
   /* background-color:red; */
-background: radial-gradient(circle, rgb(24, 50, 41) 0%, rgb(1, 1, 1) 63%, rgb(0, 3, 3) 67%, rgb(0, 0, 0) 72%);
+  background: radial-gradient(circle, rgb(24, 50, 41) 0%, rgb(1, 1, 1) 63%, rgb(0, 3, 3) 67%, rgb(0, 0, 0) 72%);
 
 
 
@@ -10,30 +9,34 @@ background: radial-gradient(circle, rgb(24, 50, 41) 0%, rgb(1, 1, 1) 63%, rgb(0,
 
 
 
-.cont{
+.cont {
 
-   /* width: 100%; */
-   height: 100%;
+  /* width: 100%; */
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(385px, auto));
 
 }
 
 
-.footer{
+.footer {
   margin-top: 40px;
   width: 100%;
 
 
 }
 
-#logo{
+#logo {
   height: 60px;
 }
+
 #ttl {
-  font-size: 24px; /* Adjust the font size as needed */
-  font-weight: bold; /* Make the text bold if desired */
-  color: yellow; /* Specify the text color */
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  font-weight: bold;
+  /* Make the text bold if desired */
+  color: yellow;
+  /* Specify the text color */
   /* Add any other styles you want */
 }
 
@@ -51,7 +54,8 @@ background: radial-gradient(circle, rgb(24, 50, 41) 0%, rgb(1, 1, 1) 63%, rgb(0,
 }
 
 .item1 {
-  position: relative; /* Use relative positioning if necessary */
+  position: relative;
+  /* Use relative positioning if necessary */
   padding: 0.2rem;
   height: 2rem;
   color: white;
@@ -62,16 +66,81 @@ background: radial-gradient(circle, rgb(24, 50, 41) 0%, rgb(1, 1, 1) 63%, rgb(0,
   cursor: pointer;
 }
 
-.navbar{
-  background-color: red;
+.navbar {
+  background: linear-gradient(45deg, rgb(24, 50, 41), rgb(43, 102, 43), rgb(24, 50, 41));
 }
 
-.item1 a {
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  height: 2.7rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all .2s;
+
+}
+
+#login:hover{
+  background: rgb(4, 87, 164);
+  color: rgb(103, 196, 174);
+  transform: scale(1.1);
+
+}
+
+#signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  height: 2.7rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all .2s;
+}
+#signup:hover{
+  background: rgb(4, 87, 164);
+  color: rgb(103, 196, 174);
+  transform: scale(1.1);
+}
+
+.item1 p {
   all: unset;
+  color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
-#category{color: white; font-weight: 600;}
+#category {
+  color: white;
+  font-weight: 600;
+}
 
+.footer-content{
+  background: greenyellow;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.text{
+  width: 80%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+h5:hover{
+  color: rgb(39, 157, 157);
+  cursor: pointer;
+}
+.copyright{
+  margin-top: 2rem;
+}

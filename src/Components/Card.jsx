@@ -70,7 +70,7 @@ function Crd(props) {
               </option>
             ))}
           </select>
-          <div className="d-inline h-100 fs-5">R{finalPrice}/-</div>
+          <div className="d-inline h-100 fs-5">₹{finalPrice}/-</div>
           <hr></hr>
 
           <button

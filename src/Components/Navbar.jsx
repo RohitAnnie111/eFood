@@ -45,14 +45,16 @@ export default function Navbar() {
             <div className="d-flex">
               <NavLink
                 to="Login"
-                className="nav-link btn bg-white text-success mx-1"
+                className="nav-link btn  mx-1"
+                id="login"
               >
                 Login
               </NavLink>
 
               <NavLink
                 to="Signup"
-                className="nav-link btn bg-white text-success mx-1"
+                className="nav-link btn mx-1"
+                id="signup"
               >
                 Signup
               </NavLink>
